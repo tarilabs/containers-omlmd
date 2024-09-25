@@ -1460,10 +1460,8 @@ version = "0.2.2"
 description = "OCI Registry as Storage Python SDK"
 optional = false
 python-versions = "*"
-files = [
-    {file = "oras-0.2.2-py3-none-any.whl", hash = "sha256:de874a5404782b9ec0fb297416c13a6e66ab521dab23d8c3135fb3db55711edc"},
-    {file = "oras-0.2.2.tar.gz", hash = "sha256:a2e87aca4fb8f43d613a42f67c88d688c8a5abe83af4cbb3e00a2e6a3ebd7649"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 jsonschema = "*"
@@ -1473,6 +1471,12 @@ requests = "*"
 all = ["docker (==5.0.1)", "jsonschema", "pytest (>=4.6.2)", "requests"]
 docker = ["docker (==5.0.1)"]
 tests = ["pytest (>=4.6.2)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/oras-project/oras-py.git"
+reference = "81c4b04"
+resolved_reference = "81c4b04f7b1993602771946ef31f33a34a3e86e8"
 
 [[package]]
 name = "packaging"
@@ -2567,4 +2571,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "8b3d2b3f2534c7cf4014ef877ec96a9ca55aed84bfc48641ef0170dc6412a43b"
+content-hash = "eec85e7b4b6d3e7ee1bdfc960aebfcb7e2b256ebe09ded601dcb984dbe5c5269"
